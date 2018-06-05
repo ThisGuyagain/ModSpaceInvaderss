@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EDD24B73-2FAF-4FF8-8EEF-80435B47F4F3}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0004\include\interface\vcos\pthreads;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0004\include\interface;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0004\include\interface\vmcs_host\linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0000\include\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0000\include\arm-linux-gnueabihf\c++\6;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0000\include\c++\6\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0000\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\169.254.187.199\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)Invaders-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0001\include\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0001\include\arm-linux-gnueabihf\c++\4.9;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0001\include\c++\4.9\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0004\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0003\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0001\include\arm-linux-gnueabihf;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.0.100\0001\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)Invaders-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Aliens.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Invaders.cpp" />
+    <ClCompile Include="MyBullet.cpp" />
+    <ClCompile Include="MyFiles.cpp" />
+    <ClCompile Include="Objects.cpp" />
+    <ClCompile Include="OpenGLESCode.cpp" />
+    <ClCompile Include="Shelter.cpp" />
+    <ClCompile Include="Shooter.cpp" />
+    <ClCompile Include="Surface.cpp" />
+    <ClCompile Include="TileFont.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Aliens.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="MyBullet.h" />
+    <ClInclude Include="MyFiles.h" />
+    <ClInclude Include="Objects.h" />
+    <ClInclude Include="OpenGLESCode.h" />
+    <ClInclude Include="Shelter.h" />
+    <ClInclude Include="Shooter.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="surface.h" />
+    <ClInclude Include="TileFont.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\invaders\bullet.png" />
+    <Image Include="Assets\invaders\InvaderA-1.png" />
+    <Image Include="Assets\invaders\InvaderA-2.png" />
+    <Image Include="Assets\invaders\InvaderB-1.png" />
+    <Image Include="Assets\invaders\InvaderB-2.png" />
+    <Image Include="Assets\invaders\InvaderC-1.png" />
+    <Image Include="Assets\invaders\InvaderC-2.png" />
+    <Image Include="Assets\invaders\saucer-1.png" />
+    <Image Include="Assets\invaders\saucer-2.png" />
+    <Image Include="Assets\invaders\saucer-3.png" />
+    <Image Include="Assets\invaders\shooter.png" />
+    <Image Include="Assets\invaders\vertical_line.png" />
+    <Image Include="Assets\invaders\wiggly-missile.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

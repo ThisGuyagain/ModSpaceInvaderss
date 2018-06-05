@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{af12f337-0a4b-4485-ba78-5a9fe14f3c27}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{8ee6cd8c-8a08-48bc-8658-6413f9c93970}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{fcd05103-e6bf-4005-9df1-0b0009f70011}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{caeeb627-98c5-4bda-9a70-4ca8a8afc631}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Resource files\Assets">
+      <UniqueIdentifier>{c0c3a9df-d9d1-4b76-9144-c1e4bb07f44b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Invaders.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFiles.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLESCode.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shooter.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Aliens.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyBullet.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shelter.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="TileFont.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyFiles.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="surface.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLESCode.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shooter.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Aliens.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBullet.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shelter.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="TileFont.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\invaders\bullet.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\InvaderA-1.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\InvaderA-2.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\InvaderB-1.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\InvaderB-2.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\InvaderC-1.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\InvaderC-2.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\saucer-1.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\saucer-2.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\saucer-3.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\shooter.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\wiggly-missile.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+    <Image Include="Assets\invaders\vertical_line.png">
+      <Filter>Resource files\Assets</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
